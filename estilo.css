@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de tareas */
+#tareas-lista {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+}
+
+#tareas-lista li {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+/* Colores para las tareas según su fecha de vencimiento */
+.vencimiento-verde {
+    background-color: #d4edda; /* Verde claro */
+}
+
+.vencimiento-amarillo {
+    background-color: #fff3cd; /* Amarillo claro */
+}
+
+.vencimiento-naranja {
+    background-color: #ffeeba; /* Naranja claro */
+}
+
+.vencimiento-rojo {
+    background-color: #f8d7da; /* Rojo claro */
+}
+
+/* Estilos para los inputs de descripción de tarea y fecha */
+#descripcion-tarea, #fecha-tarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[onclick="mostrarTareasCompletadas()"] {
+    background-color: #28a745;
+}
+
+button[onclick="mostrarTareasCompletadas()"]:hover {
+    background-color: #218838;
+}
+
+button[onclick="mostrarTareasPendientes()"] {
+    background-color: #ffc107;
+}
+
+button[onclick="mostrarTareasPendientes()"]:hover {
+    background-color: #e0a800;
+}
